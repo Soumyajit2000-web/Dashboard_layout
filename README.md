@@ -40,3 +40,12 @@ The Webpage Containes:
 
 Click the link:
 [Dashboard](https://soumyajit2000-web.github.io/Dashboard_layout/Dashboard/index.html)
+
+## Features
+1. This page has a sidebar navigation for each section.
+2. The Data are shown in form of cards. 
+3. More Data can be added in the form of cards.
+4. This page is responsive and can render properly on 80% of the devices
+
+## Issues
+Sidebar navigation is not working as of now.
