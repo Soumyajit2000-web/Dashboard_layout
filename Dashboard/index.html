@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+  
+  
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', { 'packages': ['corechart'] });
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Days', 'Hours'],
+        ['1', 4],
+        ['2', 2],
+        ['3', 6],
+        ['4', 4],
+        ['5', 3],
+        ['6', 7],
+        ['7', 2]
+      ]);
+
+      var options = {
+        title: 'Time Spent',
+        hAxis: { title: 'Last Seven Days', titleTextStyle: { color: '#333' } },
+        vAxis: { minValue: 0 }
+      };
+
+      var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }
+  </script>
+
+
+
+</head>
+
+<body>
+  <div class="sidebar toggle" id="sidebar">
+    <div class="sidebar-menu">
+      <ul>
+        <li class="item">
+          <a href="#"><i class="material-icons">dashboard</i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+
+        <li class="item">
+          <a href="#"><i class="material-icons">assignment</i>
+            <span>Upcoming Lessons</span>
+          </a>
+        </li>
+
+        <li class="item">
+          <a href="#"><i class="material-icons">leaderboard</i>
+            <span>Leaderboard</span>
+          </a>
+        </li>
+
+        <li class="item">
+          <a href="#"><i class="material-icons">book</i>
+            <span>My Courses</span>
+          </a>
+        </li>
+
+        <li class="item">
+          <a href="#"><i class="material-icons">task</i>
+            <span>Tasks</span>
+          </a>
+        </li>
+
+        <li class="item">
+          <a href="#"><i class="material-icons">forum</i>
+            <span>Forum</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Head Section  -->
+
+  <header>
+    <div class="head-bar">
+      <div>
+        <i class="material-icons" id="menu-btn">menu</i>
+        <h2>Logo</h2>
+      </div>
+      <div>
+        <img src="images/onlinelogomaker-051821-1136-1087.png" alt="">
+        <h3>Username</h3>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Section Starts Here  -->
+
+  <div class="main-content toggle-main" id="mainContent">
+    <h1>Dashboard</h1>
+    <div class="cards">
+      <div class="card-single" id="card1">
+        <h2>Upcoming Lessons</h2>
+        <div class="ul">
+          <div class="ul-section">
+            <h3>June 10:</h3>
+            <h3>Computer Architecture</h3>
+          </div>
+
+          <div class="ul-section">
+            <h3>June 11:</h3>
+            <h3>Data Structures</h3>
+          </div>
+
+          <div class="ul-section">
+            <h3>June 12:</h3>
+            <h3>Advanced algorithm</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-single" id="card2">
+        <h2>Leaderboard</h2>
+        <table class="lead-section">
+          <tr>
+            <th>Rank</th>
+            <th>Name</th>
+            <th>Best Scores</th>
+            <th>Points</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Prattrick Alves Devano</td>
+            <td>98</td>
+            <td>2780</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Jeniffer hudson</td>
+            <td>97</td>
+            <td>2655</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Stevia Rownders</td>
+            <td>95</td>
+            <td>2380</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Sam Anderson</td>
+            <td>92</td>
+            <td>2130</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Jorge Rodriguez</td>
+            <td>89</td>
+            <td>1980</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="card-single" id="card3">
+        <h2>My Courses</h2>
+        <div class="courses">
+          <div id="course1">
+            <h3>HTML</h3>
+            <p>by <span>Brad Stevens</span></p>
+            <!-- <progress id="course1-progress" value="80" max="100"></progress> -->
+            <div class="progress">
+              <div class="progress-done" id="progress1" data-done="80">
+                80%
+              </div>
+            </div>
+          </div>
+          
+          <div id="course2">
+            <h3>CSS</h3>
+            <p>by <span>Hailey Stuart</span></p>
+            <!-- <progress id="course1-progress" value="55" max="100"></progress> -->
+            <div class="progress">
+              <div class="progress-done" id="progress2" data-done="80">
+                33%
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="card-single" id="card4">
+        <h2>Homework Progress</h2>
+        <div class="subjects">
+          <div id="sub1" class="sub">
+            <h4>DBMS</h4>
+            <p>Due Tomorrow</p>
+            <p>Progress:</p>
+            <div class="progress">
+              <div class="progress-done" id="sub1-progress" data-done="80">
+                80%
+              </div>
+            </div>
+          </div>
+
+          <div id="sub2" class="sub">
+            <h4>Data Science</h4>
+            <p>Due 24 May</p>
+            <p>Progress:</p>
+            <div class="progress">
+              <div class="progress-done" id="sub1-progress" data-done="80">
+                80%
+              </div>
+            </div>
+          </div>
+
+          <div id="sub3" class="sub">
+            <h4>Discrete Mathematics</h4>
+            <p>Due 3 June</p>
+            <p>Progress:</p>
+            <div class="progress">
+              <div class="progress-done" id="sub1-progress" data-done="80">
+                80%
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-single" id="card5">
+        <h2>Time Spent</h2>
+        <div id="graph-container">
+          <div id="chart_div"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
