@@ -36,7 +36,7 @@ The Webpage Containes:
 <div class="main-content toggle-main" id="mainContent">
 ```
 
-## How to open site?
+# How to open site?
 
 Click the link:
 [Dashboard](https://soumyajit2000-web.github.io/Dashboard_layout/Dashboard/index.html)
