@@ -48,4 +48,5 @@ Click the link:
 4. This page is responsive and can render properly on 80% of the devices
 
 ## Issues
-Sidebar navigation links are not working as of now.
+1. Sidebar navigation links are not working as of now.
+2. 4K displays and ultrawide screens might face weird issues.
