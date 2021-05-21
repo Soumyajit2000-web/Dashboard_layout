@@ -12,7 +12,7 @@ The Folowing languages and technologies are used:
 ## Project Notes
 
 ### Screenshot
-! [Dashboard Screenshot] (https://drive.google.com/file/d/1dlO_xWlw3RNPU5ZDMBf8itkkkvK6Gwo4/view?usp=sharing)
+![Dashboard Screenshot](https://soumyajit2000-web.github.io/Dashboard_layout/Dashboard.jpg)
 
 [Screenshot](https://drive.google.com/file/d/1dlO_xWlw3RNPU5ZDMBf8itkkkvK6Gwo4/view?usp=sharing)
 
